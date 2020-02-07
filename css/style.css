@@ -1,0 +1,37 @@
+body {
+    min-height: 100vh;
+}
+
+/* Force the footer to the bottom of the viewport for now */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Improve padding and spacing of the top navbar, also add a simple drop shadow */
+.navbar {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+    box-shadow: 0 0 0.75rem 1px rgba(0,0,0,0.4);
+}
+
+/* Make the buttons on the navbar aligned to the right if there's space */
+.navbar nav div.group {
+    float: right;
+    vertical-align: middle;
+    padding-top: 8px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Fix offset login button */
+form input[type="submit"] {
+    margin-left: 0;
+}
+
+.spacer {
+    visibility: hidden;
+}
