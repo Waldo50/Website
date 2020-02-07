@@ -1,5 +1,12 @@
 body {
     min-height: 100vh;
+
+    --accent-color: #6A818C;
+    --accent-color-hover: #819CA8;
+    --accent-color-active: #52636B;
+
+    /* Photo by Simon Rae on Unsplash. https://unsplash.com/photos/E4TNRygxZYY */
+    background: bottom / cover linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 30%,rgba(255, 255, 255, 0) 100%), url('../img/simon-rae-E4TNRygxZYY-unsplash.jpg') no-repeat;
 }
 
 /* Force the footer to the bottom of the viewport for now */

@@ -27,9 +27,13 @@
     <main data-grid="container">
         <form action="login.php" method="post">
             <label for="emailField">Email:</label>
-            <input type="email" name="emailField"/>
+            <div class="inputReveal">
+                <input type="email" name="emailField"/>
+            </div>
             <label for="passwordField">Password:</label>
-            <input type="password" name="passwordField">
+            <div class="inputReveal">
+                <input type="password" name="passwordField">
+            </div>
 
             <br>
             <div class="group">
@@ -41,9 +45,8 @@
     </main>
     <footer>Cheetah Glos</footer>
 
-    <!-- WIP: Special effects similar to Windows 10's fluent UI.
+    <!-- WIP: Special effects similar to Windows 10's fluent UI. -->
     <script src="https://ozli.ga/Ozli-v1.7/win10fluent.css"></script>
     <script src="https://ozli.ga/Ozli-v1.7/win10fluent.js"></script>
-    -->
 </body>
 </html>
