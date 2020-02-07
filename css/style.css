@@ -9,12 +9,22 @@ body {
     background: bottom / cover linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 30%,rgba(255, 255, 255, 0) 100%), url('../img/simon-rae-E4TNRygxZYY-unsplash.jpg') no-repeat;
 }
 
-/* Force the footer to the bottom of the viewport for now */
 footer {
+    /* Force the footer to the bottom of the viewport for now */
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+
+    background-color: #eee;
+}
+
+/* Implement fluent design acrylic for the footer if supported by the browser */
+@supports (backdrop-filter: blur(8px) brightness(125%) contrast(75%)) {
+    footer {
+        backdrop-filter: blur(8px) brightness(125%) contrast(75%);
+        background-color: rgba(255, 255, 255, 0.4);
+    }
 }
 
 /* Improve padding and spacing of the top navbar, also add a simple drop shadow */
