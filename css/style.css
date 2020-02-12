@@ -53,3 +53,84 @@ form input[type="submit"] {
 .spacer {
     visibility: hidden;
 }
+
+
+.cardsContainer {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+    gap: 2rem;
+
+    margin-top: 1rem;
+    overflow-wrap: break-word;
+
+    -ms-grid-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.cardsContainer h1.categoryHeading {
+    grid-column: span 2;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -0.75rem;
+
+    text-shadow: 0 0 1rem white;
+}
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+
+    cursor: pointer;
+}
+.card.xl {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+.card.l {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.card.xl.map {
+    background: url('../img/map-placeholder.png') no-repeat;
+    background-size: cover;
+}
+
+.card p {
+    margin-top: 0.25rem;
+}
+
+/* Reduce the gap on viewport 3 and lower */
+@media only screen and (max-width: 1083px) {
+    .cardsContainer {
+        grid-gap: 1rem;
+        gap: 1rem;
+    }
+    .cardsContainer h1.categoryHeading {
+        margin-bottom: -0.25rem;
+    }
+    .card.xl {
+        grid-column: span 4;
+    }
+    .card {
+        grid-column: span 2;
+    }
+}
+
+
+/* Implement fluent design acrylic for the cards if supported by the browser
+@supports (backdrop-filter: blur(8px) brightness(125%) contrast(75%)) {
+    .card {
+        backdrop-filter: blur(8px) brightness(125%) contrast(75%);
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}
+*/
+
+
+
+form section h3 {
+    margin-top: 1rem;
+    margin-bottom: -0.5rem;
+}

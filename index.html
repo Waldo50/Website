@@ -25,7 +25,62 @@
         </nav>
     </div>
     <main data-grid="container">
-        <p>Content here</p>
+        <div class="cardsContainer">
+            <h1 class="categoryHeading">Map</h1>
+            <h1 class="categoryHeading">Bowsers</h1>
+            <div class="card xl map">
+                <form>
+                    <input name="deployedMapCheckbox" type="checkbox">
+                    <label for="deployedMapCheckbox">Deployed</label>
+                    <input name="awaitingRefillsMapCheckbox" type="checkbox">
+                    <label for="awaitingRefillsMapCheckbox">Awaiting refill</label>
+                    <input name="priorityLocationMapCheckbox" type="checkbox">
+                    <label for="priorityLocationMapCheckbox">Priority location</label>
+                </form>
+            </div>
+            <div class="card">
+                <h4>Deployed</h4>
+                <h1>20</h1>
+            </div>
+            <div class="card">
+                <h4>Pending</h4>
+                <h1>3</h1>
+            </div>
+            <div class="card">
+                <h4>Awaiting refills</h4>
+                <h1>2</h1>
+            </div>
+            <div class="card">
+                <h4>Needing maintenance</h4>
+                <h1>5</h1>
+            </div>
+            <div class="card">
+                <h4>Available for deployment</h4>
+                <h1>46</h1>
+            </div>
+            <div class="card">
+                <h4>Priority locations</h4>
+                <h1>7</h1>
+            </div>
+            <h1 class="categoryHeading">Actions</h1>
+            <h1 class="categoryHeading" style="visibility: hidden;"></h1>
+            <div class="card" onclick="window.location='request-a-bowser.html'">
+                <h3>Request a bowser</h3>
+                <p>If you need to request a bowser for your location, click here.</p>
+            </div>
+            <div class="card">
+                <h3>Request a refill</h3>
+                <p>Click here to request a refill for a currently deployed bowser.</p>
+            </div>
+            <div class="card">
+                <h3>Report damages</h3>
+                <p>Tell us if a bowser needs maintenance or repairs here.</p>
+            </div>
+            <div class="card">
+                <h3>More actions...</h3>
+                <p>If the action you want is not listed, click here for more.</p>
+            </div>
+        </div>
     </main>
     <footer>Cheetah Glos</footer>
 
